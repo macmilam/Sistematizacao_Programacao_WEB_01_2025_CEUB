@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vitalis Prime</title>
+
+    <!-- Framework Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Framework Slick CSS-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- Ancoragem para o arquivo styles.css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Ancoragem para disponibilização de alguns ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+
+<body>
+    <!-- Menu de navegação -->
+     <nav class="navbar navbar-expand-lg p-2 shadow-sm mb-5">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="./image/Logo_Clinica_Icone_Pequeno.png" alt="Clínica Vitalis Prime" height="100">
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" 
+                    type="button"
+                    data-bs-toggle="colapse" 
+                    data-bs-target="#navbarNav" 
+                    arial-controls="navbarNav" 
+                    aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="colapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto menu-principal text-center">
+                    <!-- Seções-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre a Clínica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li class="nav-item">
+                    <li>
+                        <a class="nav-link" href="#equipe">Equipe Médica</a>
+                    </li class="nav-item">
+                </ul>
+               
+                <button class="btn btn-outline-primary d-block btn-contact" 
+                onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Fale Conosco</button>  
+            </div>
+        </div>
+     </nav>
+
+     <!-- Primeira parte - Sobre a clínica -->
+     <div class="container slideshow mb-5">
+        <div class="row row-cols-1 row-cols-md-2 align-items-center">
+            <div class="col overflow-hidden">
+                <span class="d-block w-100 h-50">
+                    <h2 class="display-4">A sua saúde é a nossa
+                        <span class="text-sucess">prioridade!</span>
+                    </h2>
+                </span>
+                <span class="d-block w-100 h-50">
+                    <p class="fs-5" 
+                       style="text-align: justify;">
+                        Cuidar da saúde é essencial para garantir qualidade de vida e bem-estar. A prática de realizar checkups preventivos não apenas ajuda a identificar potenciais problemas antes que se tornem graves, mas também promove uma vida mais equilibrada e saudável. Na clínica Vitalis Prime, você encontrará profissionais dedicados e equipamentos modernos, prontos para oferecer o cuidado que você merece. Confie na Vitalis Prime para cuidar do que mais importa: você.
+                    </p>
+                    <button class="btn btn-outline-primary" 
+                    onclick="document.getElementById('sobre').scrollIntoView({behavior: 'smooth'})">Fazer Tour</button>  
+                </span>
+            </div>
+            <div class="col">
+                <img src="./image//medico_capa_novo.jpg" width="80%">
+            </div>
+        </div>
+     </div>
+    
+     <div id="sobre" class="container services">
+        <p style="margin-bottom: 150px;"></p>
+
+            <img src="./image/Logo_Clinica_grande.jpg" alt="Imagem Clínica" class="d-block mx-auto">
+            <!-- Titulo -->
+            <h2 class="text-center my-4 mt-5">Bem vindo a Clínica Vitalis Prime</h2>
+
+            <p class="display-7 mb-0" 
+               style="text-align: justify">
+               Temos a missão de promover saúde e o bem-estar com excelência e empatia, oferecendo cuidados personalizados e de qualidade para cada paciente. A nossa clínica médica é referência em saúde, oferecendo uma ampla gama de serviços, como consultas especializadas e exames de sangue, raio-X, ultrassom e de imagens.
+            </p>
+            
+            <!-- Card 1-->
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card border-0">
+                        <div class="text-center p-3">
+                            <img src="./image/img_equipamentos_pequeno.jpg" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Equipamentos de última geração</h5>
+                            <p class="card-text text-center">
+                                A clínica possuí equipamentos de última geração para você ter um diagnóstico preciso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2-->
+                <div class="col">
+                    <div class="card border-0">
+                        <div class="text-center p-3">
+                            <img src="./image/img_exames_pequena.jpg" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Exames Completos</h5>
+                            <p class="card-text text-center">
+                                Você poderá fazer na clínica todos os tipos de exames necessários para verificar a integridade da sua saúde e de sua família.                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3-->
+                <div class="col">
+                    <div class="card border-0">
+                        <div class="text-center p-3">
+                            <img src="./image/img_consultas_pequena.jpg" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Consultas Personalizadas</h5>
+                            <p class="card-text text-center">
+                                Nosso prioridade é você, por isso oferecemos um atendimento personalizado, baseado nas suas necessidades.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4-->
+                <div class="col">
+                    <div class="card border-0">
+                        <div class="text-center p-3">
+                            <img src="./image/img_equipe_medica_pequeno.jpg" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Equipe médica capacitada</h5>
+                            <p class="card-text text-center">
+                                Nossa equipe é altamente capacitada para fazer um atendimento de excelência, com acompanhhamento posterior personalizado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+
+     <!-- P/espaçamento entre as seções-->
+     <p style="margin-bottom: 100px;"></p>
+
+     <!-- Segunda parte - Serviços -->
+    <!-- Inicio do menu suspenso-->
+    <div id="servicos" class="container all-thinks pt-5 mb-5">
+        <div class="row">
+
+            <!-- Titulo -->
+            <div class="col-sn-12 col-md-6">
+                <h2 class="display-6 mb-5">
+                    <b><span style="color: #49b7c4;">Todos</span></b>
+                    os serviços que você precisa em um só lugar
+                </h2>
+                <div class="accordion accordion-flush" id="accordionFlush01">
+
+                    <!-- Item 01-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button 
+                                class="accordion-button collapsed fs-4 border-0 shadow-none bg-transparent" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#flush-collapseOne" 
+                                aria-expanded="false" 
+                                aria-controls="flush-collapseOne"
+                                onclick="changeImage('image/ambulancia.jpg')">
+                                <span class="fs-1 me-2 fw-light" style="color: #49b7c4;">01</span>
+                                Atendimento a domicilio
+                            </button>
+                        </h2>
+                        <div 
+                            id="flush-collapseOne" 
+                            class="accordion-collapse collapse" 
+                            data-bs-parent="#accordionFlush01"
+                            style="text-align: justify">
+                            A nossa clínica oferece atendimento domiciliar para garantir conforto e praticidade aos nossos pacientes. Com uma equipe altamente qualificada, levamos o cuidado médico até você, proporcionando acompanhamento personalizado sem a necessidade de deslocamentos. Nosso compromisso é oferecer um atendimento humanizado, eficiente e seguro, sempre priorizando o bem-estar e a comodidade dos nossos pacientes no aconchego do lar.
+                        </div>
+                    </div>
+                
+                    <!-- Item 02-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button 
+                                class="accordion-button collapsed fs-4 border-0 shadow-none bg-transparent" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#flush-collapseTwo" 
+                                aria-expanded="false" 
+                                aria-controls="flush-collapseTwo"
+                                onclick="changeImage('image/atendimento_on_line.jpg')">
+                                <span class="fs-1 me-2 fw-light" style="color: #49b7c4;">02</span>
+                                Consultas presenciais e on-line
+                            </button>
+                        </h2>
+                        <div 
+                            id="flush-collapseTwo" 
+                            class="accordion-collapse collapse" 
+                            data-bs-parent="#accordionFlush01"
+                            style="text-align: justify">
+                            Na nossa clínica, oferecemos consultas presenciais e online para atender às diferentes necessidades dos nossos pacientes. As consultas presenciais garantem um atendimento direto e personalizado, proporcionando interações mais detalhadas e exames físicos completos. Já as consultas online oferecem praticidade e acessibilidade, permitindo que você receba orientação médica sem sair de casa. Independentemente da modalidade escolhida, nosso compromisso é proporcionar um atendimento de qualidade, ágil e eficiente, sempre focado no seu bem-estar.
+                        </div>
+                    </div>
+                
+                    <!-- Item 03-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button 
+                                class="accordion-button collapsed fs-4 border-0 shadow-none bg-transparent" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#flush-collapseThree" 
+                                aria-expanded="false" 
+                                aria-controls="flush-collapseThree"
+                                onclick="changeImage('image/exames2.png')">
+                                <span class="fs-1 me-2 fw-light" style="color: #49b7c4;">03</span>
+                                Todos os tipos de exames
+                            </button>
+                        </h2>
+                        <div 
+                            id="flush-collapseThree" 
+                            class="accordion-collapse collapse" 
+                            data-bs-parent="#accordionFlush01"
+                            style="text-align: justify">
+                            Na nossa clínica, realizamos uma ampla variedade de exames para garantir um diagnóstico preciso e um acompanhamento eficiente da sua saúde. Contamos com tecnologia moderna e uma equipe especializada para oferecer resultados confiáveis e rápidos, sempre com conforto e segurança. Nosso compromisso é facilitar o acesso aos exames necessários, proporcionando praticidade e qualidade no atendimento.
+                        </div>
+                    </div>
+                
+                    <!-- Item 04-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button 
+                                class="accordion-button collapsed fs-4 border-0 shadow-none bg-transparent" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#flush-collapseFour" 
+                                aria-expanded="false" 
+                                aria-controls="flush-collapseFour"
+                                onclick="changeImage('image/cirurgia.jpg')"
+                                >
+                                <span class="fs-1 me-2 fw-light" style="color: #49b7c4;">04</span>
+                                Internação e cirurgias
+                            </button>
+                        </h2>
+                        <div 
+                            id="flush-collapseFour" 
+                            class="accordion-collapse collapse" 
+                            data-bs-parent="#accordionFlush01"
+                            style="text-align: justify">
+                            Na nossa clínica, oferecemos suporte completo para internações e cirurgias, garantindo um atendimento seguro e humanizado. Nossa equipe altamente qualificada acompanha todo o processo, desde a avaliação inicial até a recuperação, proporcionando conforto e tranquilidade aos pacientes. Trabalhamos com tecnologia avançada e protocolos rigorosos para assegurar procedimentos eficazes e minimizar riscos, sempre priorizando o bem-estar e a saúde de quem confia em nós.
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Imagem p/a coluna da direita -->
+        <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
+            <img id="menuImage" src="./image/medico_outro.png" alt="" class="img-fluid">
+        </div>
+        
+     <!-- P/Espaçamento -->
+     <p style="margin-bottom: 150px;"></p>
+
+        <div class="container what-diferent pt-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <img src="./image/medico_diferencial.jpg" alt="Clinica Vitalis" class="img-fluid">
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <h2 class="display-6 mb-5">Qual o nosso <span style="color: #49b7c4;"> diferencial?</span></h2>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <i class="fa-regular fa-handshake display-5 opacity-50 mb-2 d-block"></i>
+                            <b class="fs-3 d-block mt-3">Aceitamos <span style="color: #49b7c4;">todos</span> os convênios médicos</b>
+
+                            <!-- P/espaçamento visual -->
+                            <p style="margin-bottom: 20px;"></p>
+
+                            <p class="mb-3" style="text-align: justify">
+                                Nós da Vitalis Prime temos o orgulho de oferecer como benefício a aceitação de todos os convênios médicos. Essa iniciativa reflete o nosso compromisso em garantir que cada paciente tenha acesso ao nosso atendimento, independentemente do plano de saúde. Estamos aqui para proporcionar cuidado personalizado e acolhimento em todos os momentos, reafirmando a nossa missão de cuidar de você com empatia e dedicação.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <i class="fa-regular fa-hourglass display-5 opacity-50 mb-2 d-block"></i>
+                            <b class="fs-3 d-block mt-3">Atendimento <span style="color: #49b7c4;">24h</span> e sem filas</b>
+
+                            <!-- P/espaçamento visual -->
+                            <p style="margin-bottom: 20px;"></p>
+
+                            <p class="mb-3" style="text-align: justify">
+                                Nossa clínica funciona durante as 24h do dia, se destacando por oferecer um atendimento ágil e sem filas, priorizando o conforto e a satisfação de nossos pacientes. Com um sistema eficiente de agendamento e organização, garantimos que cada pessoa receba o cuidado necessário no horário marcado, sem longas esperas. Assim, proporcionamos uma experiência mais tranquila e prática, reforçando nosso compromisso com um serviço de qualidade e respeito ao seu tempo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg mt-5 d-block" 
+                            style="background-color: #49b7c4; color: #ffffff; border: none; 
+                            display: flex; justify-content: center; align-items: center;"
+                            onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+                            <i class="fa-regular fa-lightbulb me-3"></i>
+                            Mais informações
+                    </button>
+                </div>
+            </div>
+     </div>
+
+        <!-- Terceira parte - Equipe médica -->
+        <div id="equipe" class="container services">
+            <p style="margin-bottom: 70px;"></p>
+                <h2 class="text-center my-4 mt-5">Equipe médica renomada</h2>
+                <p class="display-7 mb-0" 
+                   style="text-align: justify">
+                    Os profissionais da Clínica Vitalis Prime são altamente competentes. Dedicados a oferecer o melhor atendimento com excelência e cuidado em cada detalhe. Conheça nossa equipe:
+                </p>
+                
+                <!-- Linha 01-->
+                <!-- Card 1-->
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="text-center p-3">
+                                <img src="./image/medica01.png" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Pedriatria</h5>
+                                <p class="card-text text-center">
+                                    Dra. Amanda Lopes
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 2-->
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="text-center p-3">
+                                <img src="./image/medico03.png" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Cardiologia</h5>
+                                <p class="card-text text-center">
+                                    Dr. Henrique Matos               
+                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 3-->
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="text-center p-3">
+                                <img src="./image/medico07.jpg" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Ginecologia</h5>
+                                <p class="card-text text-center">
+                                    Dra. Elisa Furukawa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 4-->
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="text-center p-3">
+                                <img src="./image/medico08.jpg" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Neurologia</h5>
+                                <p class="card-text text-center">
+                                    Dr. Wagner Bishop
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Espaço entre as linhas -->
+                <p style="margin-bottom: 20px;"></p>
+
+                <!-- Linha 02-->
+                 <!-- Card 5-->
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="text-center p-3">
+                                <img src="./image/medico09.jpg" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Urologia</h5>
+                                <p class="card-text text-center">
+                                    Dr. Antonio Bianco
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 6-->
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="text-center p-3">
+                                <img src="./image/medico06.png" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Endocrinologia</h5>
+                                <p class="card-text text-center">
+                                    Dra. Katia Couto               
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 7-->
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="text-center p-3">
+                                <img src="./image/medico02.jpg" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Fisioterapia</h5>
+                                <p class="card-text text-center">
+                                    Dr. Matheus Andrade
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 8-->
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="text-center p-3">
+                                <img src="./image/medico04.jpg" alt="Clínica Vitalis Prime" style="width: 80%; height: auto;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Clínica Geral</h5>
+                                <p class="card-text text-center">
+                                    Dr. Glauber Carvalho
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Quarta parte - Início Newsletter e contato -->
+    <div id="contato" class="container-fluid mt-5 newsletter">
+        <div class="container p-5 d-flex justify-content-center flex-wrap">
+            <h2 class="fs-3 d-block w-100 text-center text-muted">Quer receber as novidades?</h2>
+        
+            <div class="input-group mt-4 mb-3 position-relative">
+                <input type="text" 
+                class="form-control form-control-lg rounded-end-0 shadow-sm rounded-1"
+                placeholder="Digite seu email para contato" id="emailInput">
+    
+                <button class="btn rounded-start-0 fs-4 py-2"
+                style="background-color: #49b7c4; color: #ffffff; border: none;" 
+                onclick="mostrarPopup()">Inscreva-se</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Formulário de contato -->
+    <div class="container my-3" style="display: flex; align-items: center; justify-content: center;">
+        
+        <div class="form-container" style="background-color:#49b7c4; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(249, 250, 246, 0.1); width: 600px; margin-right: 20px;">
+            <h2 class="text-center text-white">Ficou alguma dúvida?</h2>
+            <p style="margin-bottom: 30px;"></p>
+            <form onsubmit="return enviarFormulario()">
+                <label for="nome" class="text-white">Nome:</label>
+                <input type="text" id="nome" name="nome" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 10px;" required>
+    
+                <label for="assunto" class="text-white">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 10px;" required>
+    
+                <label for="telefone" class="text-white">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 10px;" required>
+    
+                <label for="email" class="text-white">Email:</label>
+                <input type="email" id="email" name="email" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 10px;" required>
+    
+                <label for="mensagem" class="text-white">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" maxlength="5000" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 10px;" required></textarea>
+    
+                <button type="submit" style="width: 100%; padding: 10px; background-color: #87c440; color: white; border: none; border-radius: 10px; cursor: pointer; font-size: 16px;">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    
+        <!-- Imagem ao lado -->
+        <div>
+            <img src="./image/atendente_contato.jpg" alt="Imagem da Clínica" 
+             style="width: 600px; ">
+        </div>
+    </div>
+    
+    <!-- Rodapé -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+            <div class="col mb-3">
+                <img src="./image/Logo_Clinica_media.jpg" alt="Logo_Clinica">
+                <p class="text-muted fs-6 mt-4" style="text-align: justify;"></p>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Unidades</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary" style="text-align: justify;">
+                            R. Arariba 5 - Águas Claras, Brasília - DF, 71927-360
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary" style="text-align: justify;">
+                            SH Arniqueiras QS8 Conjunto 410 A - Águas Claras, Brasília - DF, 71950-770
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col mb-3">
+                <h5>Contato</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            contato@vitalisprime.com.br
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            +55(61)5555-2080
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            +55(61)5570-2150/8700
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            WhatsApp: +55(61)99880-7054
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Sobre a clínica</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            Sobre a Vitalis Prime
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            Serviços oferecidos
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            Laboratórios parceiros
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            Trabalhe conosco
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Redes Sociais</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            Instagram: @vitalisprime
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            Facebook: vitalisprime
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            Twitter/X: @vitalisprime
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="" class="nav-link p-0 text-body-secondary">
+                            YouTube: @vitalisprime
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Framework Bootstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Framework JQuery-->
+    <script src="jquery.js"></script>
+
+    <!-- Framework Slick Javascript-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+    <!-- Link para o arquivo script.js -->
+     <script src="./script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
